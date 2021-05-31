@@ -1,0 +1,60 @@
+$black-color: #000000
+$orang-color: #fd926d
+$grey-light: #f7f7f7
+$grey-darcker: #ededed
+$white-color: #ffffff    
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    border: 0
+    font-family: "Conv_arial_mt", "Arial"
+    text-decoration: none
+    &:focus
+        outline: none
+ul
+    list-style: none
+.error
+    font-size: 15px
+    display: block
+    padding-left: 0
+#email-error
+    margin-left: 12px
+    padding-top: 4px
+    order: 3
+    color: red
+@media ( max-width: 640px )
+    #email-error
+        font-size: 30px
+        width: 100%
+        text-align: center
+        margin-top: 6px
+
+
+@font-face 
+	font-family: 'Conv_arial_mt'
+	src: url('../fonts/arial_mt.eot')
+	src: local('☺'), url('../fonts/arial_mt.woff') format('woff'), url('../fonts/arial_mt.ttf') format('truetype'), url('../fonts/arial_mt.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+@font-face 
+    font-family: 'HelveticaNeueLTStd-Th'
+    src: url('../fonts/HelveticaNeueLTStd-Th.eot')
+    src: local('☺'), url('../fonts/HelveticaNeueLTStd-Th.woff') format('woff'), url('../fonts/HelveticaNeueLTStd-Th.truetype') format('truetype'), url('../fonts/HelveticaNeueLTStd-Th.svg') format('svg')
+    font-weight: normal
+    font-style: normal
+
+@import "sass-blocks/_header"
+@import "sass-blocks/_container"
+@import "sass-blocks/_sliders"
+@import "sass-blocks/_buttons"
+@import "sass-blocks/_adres-line"
+@import "sass-blocks/_sub-menu"
+@import "sass-blocks/_collection"
+@import "sass-blocks/_clearance"
+@import "sass-blocks/_product-card"
+@import "sass-blocks/_actual-goods"
+@import "sass-blocks/_brands"
+@import "sass-blocks/_about-us"
+@import "sass-blocks/_footer"

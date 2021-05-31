@@ -1,0 +1,35 @@
+.container
+    width: 972px
+    margin: 0 auto
+    &_display-flex
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &_full-screen
+        width: 100%
+        padding: 0px 0px
+
+@media ( max-width: 992px )
+    .container
+        width: 769px
+        padding: 0 14px
+        &_full-screen
+            width: 100%
+            padding: 0 
+
+@media ( max-width: 768px )
+    .container
+        width: 100%
+        padding: 0 13px
+        &_full-screen
+            width: 100%
+            padding: 0
+            margin: 0
+
+@media ( max-width: 640px )
+    .container
+        &_header-tops-on640
+            padding-right: 0
+            padding-left: 0
+        &_flex-direction-col
+            flex-direction: column

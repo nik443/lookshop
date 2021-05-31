@@ -1,0 +1,63 @@
+.button
+    width: 156px
+    height: 54px
+    box-shadow: 0 3px 0 #dd6b44
+    background-color: #ffa687
+    z-index: 1
+    margin-top: 18px 
+    color: $white-color
+    font-family: "Helvetica Neue LT Std - Th"
+    font-size: 16px
+    font-weight: 100
+    text-transform: uppercase
+    font-family: 'HelveticaNeueLTStd-Th'
+    cursor: pointer
+    padding: 18px 49px 15px 23px
+    position: relative
+    img
+        width: 4px
+        height: 7px
+        display: block
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 25px
+    &_in-goods-slider
+        width: 120px
+        height: 32px
+        font-size: 11px
+        padding: 0 30px 0 0
+        margin-top: 8px 
+        font-family: "HelveticaNeueLTStd-Th"
+        position: relative
+        img
+            position: absolute
+            right: 10px 
+            width: 11px
+            height: 11px
+
+@media ( max-width: 992px )
+    .button
+        width: 116px
+        height: 40px
+        font-size: 12px
+        padding: 13px 36px 10px 17px
+        margin-top: 11px
+        img
+            width: 3px
+            height: 5px
+            right: 19px
+        &_in-goods-slider
+            height: 32px
+            padding: 7px 27px 5px 0px
+            img
+                width: 11px 
+                height: 11px
+                right: 11px
+@media ( max-width: 640px )
+    .button
+        &_in-goods-slider
+            width: 220px
+            height: 60px
+            box-shadow: 0 7px 0 #dd6b44
+            font-size: 20px

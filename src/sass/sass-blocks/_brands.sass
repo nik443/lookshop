@@ -1,0 +1,32 @@
+.brands
+    margin-bottom: 29px
+    &__header
+        position: relative
+    &__line
+        width: 100%
+        height: 1px
+        background-color: $grey-darcker
+    &__subtitle
+        position: absolute
+        width: 194px
+        color: #414141
+        font-family: "Arial"
+        font-size: 15px
+        font-weight: 700
+        text-transform: uppercase
+        padding: 0 20px 0 20px
+        left: 50%
+        transform: translateX(-50%)
+        top: -8px
+        background-color: $white-color
+    &__list
+        padding: 16px 0 22px 0
+    
+@media ( max-width: 768px )
+    .brands__list
+        padding: 16px 29px 22px 29px
+        &__item_on768del
+            display: none
+@media ( max-width: 640px )
+    .brands
+        display: none

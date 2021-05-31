@@ -1,0 +1,113 @@
+.adres-line
+    height: 55px
+    background-color: $grey-darcker
+    margin-top: 33px
+    &__adres-block
+        display: flex
+        align-items: center
+        justify-content: center
+        span
+            margin-right: 10px
+    &__social-networks
+        display: flex
+        align-items: center
+    &__hint
+        display: block
+        font-size: 12px
+        font-weight: 400
+        margin-right: 15px
+    &__networks-wrapper
+        display: flex
+    &__networks
+        width: 55px
+        height: 55px
+        background-color: $grey-light
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+            display: block
+        &:hover
+            background-color: $grey-darcker
+    &__form
+        display: flex
+        position: relative
+        input
+            padding-left: 9px
+            width: 134px
+            height: 28px
+            background-color: $white-color
+            color: #9f9f9f
+            font-style: "Italic"
+            font-size: 12px
+            font-weight: 400
+    &__add-adres
+        width: 28px
+        height: 25px
+        box-shadow: 0 3px 0 #dd6b44
+        background-color: #fd926d
+        margin-bottom: 3px
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        img
+            display: block
+            position: absolute
+
+@media ( max-width: 992px )
+    .adres-line
+        margin-top: 23px
+    
+@media ( max-width: 640px )
+    .adres-line
+        margin-top: 102px
+        background-color: $white-color
+        margin-bottom: 27px
+        height: auto
+        &__adres-block
+            width: 100%
+            align-items: flex-start
+            .adres-line__hint
+                display: none
+        &__form
+            flex-grow: 1
+            flex-wrap: wrap
+            input
+                width: calc( 100% - 84px )
+                background-color: $grey-darcker
+                font-size: 30px
+                padding: 37px 0 37px 29px
+                height: 80px
+        &__add-adres
+            width: 84px
+            height: 72px
+            box-shadow: 0 8px 0 #dd6b44
+        &__social-networks
+            margin-top: 25px
+        &__hint
+            font-size: 26px
+            margin-right: 35px
+        &__networks
+            width: 89px
+            height: 89px
+
+@media ( max-width: 540px )
+    .adres-line
+        margin-top: 25px
+        .container
+            padding: 0
+        &__adres-block
+            padding: 0 13px
+        &__social-networks
+            flex-direction: column
+        &__form
+            input
+                font-size: 20px
+                padding: 37px 8px 37px 8px
+        &__hint
+            font-size: 20px
+            margin-right: 0px
+            margin-bottom: 5px
+        &__add-adres
+            width: 84px

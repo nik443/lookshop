@@ -1,0 +1,201 @@
+.footer
+    &__archive
+        display: flex
+        justify-content: space-between
+    &__archive-wrapper
+        background-color: $grey-darcker
+        padding: 35px 0 33px 0
+    &__archive-inf-lists
+        width: 612px
+        display: flex
+        flex-wrap: wrap
+    &__archive-block
+        margin-right: 64px
+        &:last-child
+            margin-right: 0
+    &__archive-item
+        color: #544f4d
+        font-size: 16px
+        font-weight: 900
+        &_100pr
+            display: flex
+            align-items: center
+            img
+                display: block
+        &_social
+            width: 125px
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            margin-top: 17px
+            img
+                display: block
+        &_lists
+            margin-right: 45px
+            &:last-child
+                margin-right: 0
+        ul
+            margin-top: 17px
+            li
+                color: #979493
+                font-size: 12px
+                font-weight: 400
+                line-height: 18px
+                a
+                    color: #979493
+    &__nav-wrapper
+        height: 76px       
+        background-color: $black-color
+    &__nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 20px 0 20px 0
+    &__nav-block-onen
+        display: none
+    &__nav-list
+        display: flex
+        li
+            padding: 0 9px
+            display: block
+            position: relative
+            &:first-child
+                padding-left: 0
+                &::after
+                    display: none
+            &:last-child
+                padding-right: 0
+            &::after
+                content: ""
+                display: block
+                position: absolute
+                height: 9px 
+                width: 1px
+                background-color: #757575
+                top: 7px
+                left: 1px
+            a
+                color: #757575
+                font-size: 11px
+                font-weight: 400
+                line-height: 11px
+    &__nav-block-close
+        display: none
+    &__nav-info
+        font-size: 11px
+        font-weight: 400
+        line-height: 18px
+        color: #757575
+
+@media ( max-width: 992px )
+    .footer
+        &__archive
+            align-items: flex-start
+        &__archive-item_lists
+            &:nth-child(3)
+                margin-right: 61px
+            &:nth-child(2)
+                margin-right: 0
+        &__archive-inf-lists
+            width: 310px
+        &__archive-item_100pr
+            margin-top: 18px
+
+@media ( max-width: 768px )
+    .footer
+        &__archive-block 
+            margin-right: 36px
+        &__archive-item
+            &_lists
+                &:nth-child(3), &:nth-child(4)
+                    margin-top: 39px
+
+@media ( max-width: 640px )
+    .footer 
+        overflow: hidden
+        &__archive-wrapper
+            display: none
+        &__nav-wrapper
+            height: auto
+        &__nav
+            padding: 25px 0 19px 0
+            display: flex
+            align-items: center
+            position: relative
+        &__nav-block
+            z-index: 1
+            position: absolute
+            top: 0
+            background-color: $black-color
+            width: 100%
+            justify-content: space-between
+            padding: 8px 13px
+            transform: translateX(-100%)
+            transition: 0.5s
+            &_active
+                display: flex
+                transform: translateX(0%)
+                transition: 0.5s
+        &__nav-block-onen
+            width: 33px
+            height: 30px
+            margin-left: 13px
+            display: block
+        &__nav-block-open-lines
+            width: 32px
+            height: 5px    
+            background-color: $white-color
+            margin-top: 6px
+            border-radius: 4px
+            &:first-child
+                margin-top: 0
+        &__nav-block-close
+            display: block
+            position: relative
+            height: 32px
+            width: 32px
+        &__nav-block-close-lines
+            width: 32px
+            height: 5px
+            background-color: $white-color
+            margin-top: 6px
+            border-radius: 4px
+            &:first-child
+                margin-top: 0
+                transform: rotate(45deg)
+                position: absolute
+                top: 13px
+            &:last-child
+                transform: rotate(-45deg)
+                position: absolute
+                top: 7px
+        &__nav-info
+            font-size: 24px
+            line-height: 30px
+            text-align: right
+            z-index: 0
+            padding-right: 13px
+        &__nav-list
+            flex-direction: column
+            li
+                height: 40px
+                padding: 0
+                text-align: right
+                &::after
+                    display: none
+                &:last-child
+                    padding-right: 13px
+                a
+                    font-size: 26px
+                    line-height: 26px
+        .container
+            padding: 0
+
+@media ( max-width: 540px )
+    .footer
+        &__nav-info
+            font-size: 23px
+        &__nav-list
+            li
+                a
+                    font-size: 23px

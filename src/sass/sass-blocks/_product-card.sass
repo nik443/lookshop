@@ -1,0 +1,69 @@
+.product-card 
+    width: 220px
+    background-color: $grey-light
+    margin: 0 auto
+    position: relative
+    &__sale 
+        position: absolute
+        top: 0
+        left: 0
+    &__content 
+        color: #373737
+        font-size: 22px
+        font-weight: 400
+        padding-bottom: 12px
+        text-align: center
+        span
+            font-size: 12px
+            display: block
+            margin: 6px auto 8px auto
+    .sliders-goods__shop-it
+        display: none
+    &_in-actual-goods
+        margin: 0 30px 0 0
+        &:last-child
+            margin-right: 0
+        &:nth-child(6)
+            margin-right: 0
+    &__bag
+        display: none
+@media ( max-width: 1024px )
+    .product-card
+        &_in-actual-goods
+            &:nth-child(5)
+                margin-right: 0
+            &:nth-child(6)
+                display: none
+@media ( max-width: 768px )
+    .product-card 
+        width: 85.95%
+        &__content
+            width: 100%
+            height: auto
+        &_in-actual-goods
+            width: 33%
+            &:last-child,
+                display: none
+        &__good
+            width: 100%
+@media ( max-width: 640px )
+    .product-card
+        height: 523px
+        width: 274px
+        margin: 20px 16px 0 16px
+        &__content
+            span
+                font-size: 17.5px
+        &_in-actual-goods
+            display: none
+            &:last-child, &:nth-child(5)
+                margin-right: 16px
+            &:nth-child(6)
+                margin-right: 16px
+                display: none
+        &_disp-block640px
+            display: block
+            &:nth-child(6)
+                display: block
+        &__bag
+            display: block

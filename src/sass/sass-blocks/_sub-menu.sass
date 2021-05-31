@@ -1,0 +1,117 @@
+.sub-menu
+    display: flex
+    &__item
+        display: block
+        padding-right: 42px
+        position: relative
+        a
+            font-size: 16px
+            font-weight: 400
+            color: $black-color
+            position: relative
+        img
+            display: block
+            position: absolute
+            right: -13px
+            top: 55%
+            transform: translateY(-50%)    
+            transition: 0.5s
+        &:last-child
+            padding-right: 35px
+        &:hover img
+            transform: rotate(-90deg)
+            transition: 0.5s
+            top: 40%
+    &__list
+        position: absolute
+        background-color: $orang-color
+        z-index: 1
+        width: 102px
+    &__list-item
+        display: block
+        padding: 10px 5px 0 5px
+        transition: 0.2s
+        &:last-child
+            padding-bottom: 10px
+        &:hover
+            background-color: $white-color
+            transition: 0.2s
+        a
+            &::after    
+                display: none
+    &__mobile-open
+        padding: 14px 17px
+        align-items: center
+        position: relative
+        display: none
+        &__subtitle
+            color: $white-color
+            font-size: 18px
+            font-weight: 400
+            text-transform: uppercase
+        &__burger
+            width: 22px
+            position: absolute
+            right: 14px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        &__burger-line
+            height: 4px
+            width: 22px
+            background-color: $white-color
+            border-radius: 20%
+            margin-top: 4px
+            &:first-child
+                margin-top: 0
+
+
+@media ( max-width: 992px )
+    .sub-menu   
+        &__item
+            padding-bottom: 4px
+            a
+                font-size: 14px
+@media ( max-width: 768px )
+    .sub-menu
+        display: none
+        background-color: $orang-color
+        &__item
+            padding: 10px 0px 10px 8px
+            padding-right: 0
+            border-bottom: 1px solid $black-color
+            &:last-child
+                border-bottom: none
+            a
+                font-size: 26px
+                img
+                    right: -29px
+        &__list
+            display: block
+            position: static
+            width: 100%
+            padding-left: 15px
+        &__list-item
+            a 
+                display: block
+            &:hover
+                background-color: transparent
+        &__mobile-open
+            display: flex 
+            &__burger
+               width: 33px
+               height: 30px
+            &__burger-line
+                width: 100%
+                height: 6px
+
+        &__mobile-open__subtitle
+            font-size: 30px
+
+@media ( max-width: 540px )
+    .sub-menu
+        a
+            font-size: 23px
+        &__mobile-open__subtitle
+            font-size: 23px
+    

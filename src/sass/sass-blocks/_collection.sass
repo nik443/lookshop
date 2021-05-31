@@ -1,0 +1,35 @@
+.collections
+    height: auto
+    padding: 40px 0 51px 0
+    &__wrapper
+        display: flex
+        margin: 0 auto
+    &__slide
+        img
+            transition: 0.2s
+            &:hover
+                transform: scale(1.1)
+                transition: 0.5s
+    &__boss-slide
+        margin-right: 2px
+    &__second-slide
+        height: 49%
+    &__little-slides
+        display: flex
+    &__little-slides-first
+        margin-right: 2px
+    a
+        display: block
+        height: 100%
+
+@media ( max-width: 992px )
+    .collections
+        &__wrapper
+            width: 100%
+        img
+            width: 100%
+            height: auto
+@media ( max-width: 640px )
+    .collections
+        display: none
+    
